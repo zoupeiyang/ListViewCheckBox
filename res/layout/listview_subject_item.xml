@@ -3,26 +3,28 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+    <!-- 投票主题ID，默认隐藏 -->
     <TextView
         android:id="@+id/tv_subject_id"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:visibility="gone" />
+     <!-- 投票主题下项目ID，默认隐藏 -->
     <TextView
         android:id="@+id/tv_subject_item_id"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:visibility="gone" />
+     <!-- 投票主题类型，true为多选，否则为单选，默认隐藏 -->
        <TextView
         android:id="@+id/tv_is_multi_choice"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:visibility="gone" />
-
+       <!-- 投票主题名称，只有主题下的第一个项目才会显示主题名称，其它项目不显示 -->
     <TextView
         android:id="@+id/tv_subject_name"
         android:layout_width="fill_parent"
@@ -33,19 +35,18 @@
         android:textColor="#1387DD"
         android:textStyle="bold"
         android:text="" />
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="horizontal" >
-
+         <!-- 投票项目名称 -->
         <TextView
             android:id="@+id/tv_subject_item_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical" />
-
+         <!-- 多选项目显示CheckBox -->
         <CheckBox
             android:id="@+id/cb_subject_item"
             android:layout_width="wrap_content"
@@ -54,7 +55,7 @@
             android:focusable="false"
             android:focusableInTouchMode="false"
             android:gravity="center_vertical" />
-
+         <!-- 单选项目显示RadioButton -->
         <RadioButton
             android:id="@+id/rb_subject_item"
             android:layout_width="wrap_content"
@@ -64,5 +65,4 @@
             android:focusableInTouchMode="false"
             android:gravity="center_vertical" />
     </LinearLayout>
-
 </LinearLayout>

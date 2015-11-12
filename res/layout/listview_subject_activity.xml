@@ -3,15 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffffff" >
-
     <RelativeLayout
         android:id="@+id/rl_head"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="#0C99EF"
         android:layout_alignParentTop="true"
+        android:background="#0C99EF"
         android:paddingLeft="10dp" >
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +18,7 @@
             android:textColor="#ffffffff"
             android:textSize="16sp" />
     </RelativeLayout>
-
+    <!-- 投票项目ListView -->
     <ListView
         android:id="@+id/lv_subject"
         android:layout_width="match_parent"
@@ -29,7 +27,6 @@
         android:layout_marginBottom="50dp"
         android:layout_marginLeft="10dp" >
     </ListView>
-
     <Button
         android:id="@+id/btn_add"
         android:layout_width="match_parent"
@@ -38,4 +35,4 @@
         android:layout_marginBottom="10dp"
         android:text="提交" />
 
-    </RelativeLayout>
+</RelativeLayout>
